@@ -1,0 +1,9 @@
+[package]
+name = "app"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+ort = {path = "../ort"}
+ndarray = "0.15"
+clap = { version = "4.3.19", features = ["derive"] }

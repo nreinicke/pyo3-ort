@@ -1,0 +1,12 @@
+[package]
+name = "app-py"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+app = { path = "../app" }
+pyo3 = "0.19" 
+
+[lib]
+name = "app_py"
+crate-type = ["cdylib"]

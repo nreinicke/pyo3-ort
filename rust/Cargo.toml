@@ -1,0 +1,7 @@
+[workspace]
+members = [
+    "ort",
+    "app",
+    "app-py",
+]
+

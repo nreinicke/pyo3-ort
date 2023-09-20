@@ -1,0 +1,20 @@
+[build-system]
+requires = ["maturin>=1.0,<2.0"]
+build-backend = "maturin"
+
+[project]
+name = "testapp"
+version = "0.1.0"
+description = "An app to test onnx runtime with pyo3"
+readme = "README.md"
+requires-python = ">=3.8"
+authors = [{ name = "Nicholas Reinicke" }]
+dependencies = []
+[project.optional-dependencies]
+dev = ["maturin"]
+
+[tool.maturin]
+python-source = "python"
+features = ["pyo3/extension-module"]
+module-name = "testapp.app_py"
+manifest-path = "rust/app-py/Cargo.toml"
