@@ -1,3 +1,0 @@
-[env]
-ORT_STRATEGY = { value = "system" }
-ORT_LIB_LOCATION = { value = "rust/app/include/onnxruntime-osx-x86_64-static_lib-1.15.1/lib", relative = true }
